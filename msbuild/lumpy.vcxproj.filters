@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{598e4bec-aed2-467b-be00-6dc54dbf99c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{7f296cd6-80f6-47f6-95f4-37ae533b43d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest">
+      <UniqueIdentifier>{16d54e91-b0e3-4254-873b-4c1c91e55b96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{6782609c-bc0e-4c07-aa49-5d10c0849c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="{content}">
+      <UniqueIdentifier>{90792324-f377-4f69-9e03-7eda14bc5b5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lumpy\core\array.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\core\format.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\core\memory.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\core\type.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\config.h" />
+    <ClInclude Include="..\lumpy\core.h" />
+    <ClInclude Include="..\lumpy\log.h" />
+    <ClInclude Include="..\lumpy\math.h" />
+    <ClInclude Include="..\lumpy\unittest.h" />
+    <ClInclude Include="..\lumpy\log\log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\math\array.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\math\slice.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\math\view.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lumpy\unittest\unittest.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\lumpy\lumpy.natvis">
+      <Filter>{content}</Filter>
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lumpy\unittest\unittest.cpp">
+      <Filter>unittest</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

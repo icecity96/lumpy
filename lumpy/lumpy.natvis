@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="lumpy::core::array_view&lt;*&gt;">
+    <Expand>
+      <ArrayItems>
+        <Size>_size</Size>
+        <ValuePointer>_elements</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+  
+  <Type Name="lumpy::core::array&lt;*,*&gt;">
+    <Expand>
+      <ArrayItems>
+        <Size>$T2</Size>
+        <ValuePointer>_elements</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+  <Type Name="lumpy::ndslice&lt;*,*&gt;">
+    <Expand>
+      <Item Name="[shape]">_shape</Item>
+      <Item Name="[stride]">_stride</Item>
+      <Item Name="[data]">_data</Item>
+    </Expand>
+  </Type>
+  
+</AutoVisualizer>
